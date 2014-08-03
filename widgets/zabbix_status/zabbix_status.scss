@@ -1,0 +1,86 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color: #222;
+$text-color: #fff;
+
+$background-ok: #96bf48;
+
+$background-average-color: #FF7F0F;
+$text-average-color: #fff;
+
+$background-warn-color: #FFB010;
+$text-warn-color: #fff;
+
+$background-high-color: #FF4E0D;
+$text-high-color: #fff;
+
+$background-disaster-color: #E8290C;
+$text-disaster-color: #fff;
+
+// ----------------------------------------------------------------------------
+// Zabbix widget styles
+// ----------------------------------------------------------------------------
+.widget-zabbix {
+  padding: 25px 12px;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.widget-zabbix.zabbix-ok {
+  background-color: $background-ok;
+}
+
+.widget-zabbix.zabbix-average {
+  color: $text-average-color;
+  background-color: $background-average-color;
+
+  .icon-average-sign {
+    display: inline-block;
+  }
+
+  .title, .more-info {
+    color: $text-average-color;
+  }
+}
+
+.widget-zabbix.zabbix-warning {
+  color: $text-warn-color;
+  background-color: $background-warn-color;
+
+  .icon-warn-sign {
+    display: inline-block;
+  }
+
+  .title, .more-info {
+    color: $text-warn-color;
+  }
+}
+
+.widget-zabbix.zabbix-high {
+  color: $text-high-color;
+  background-color: $background-high-color;
+
+  .icon-high-sign {
+    display: inline-block;
+  }
+
+  .title, .more-info {
+    color: $text-high-color;
+  }
+}
+
+.widget-zabbix.zabbix-disaster {
+  color: $text-disaster-color;
+  background-color: $background-disaster-color !important;
+
+  .icon-disaster-sign {
+    display: inline-block;
+  }
+
+  .title, .more-info {
+    color: $text-disaster-color;
+  }
+}
