@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-//$background-color:  #12b0c5;
+$background-color:  #4F7383;
 //$background-color:  rgba(0,0,0, 0.3);
 $value-color:       #fff;
 
@@ -13,23 +13,21 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 // Widget-list styles
 // ----------------------------------------------------------------------------
 
-.widget.widget-zabbix-details {
+.widget.widget-zabbix-info {
 
-  vertical-align: top;
+  vertical-align: bottom;
 
- // background-color: $background-color;
+  background-color: $background-color;
 
   .title {
     color: $title-color;
-    font-size: 18px
   }
 
   ul {
-    // margin: 0 15px;
-    // display: inline;
     text-align: left;
     color: $label-color;
-    font-size:12px;
+    font-size:16px;
+    margin-bottom: 20px;
   }
 
   li {
@@ -52,7 +50,7 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   .updated-at {
-    color: rgba(0, 0, 0, 0.3);
+  //  color: rgba(0, 0, 0, 0.3);
   }
 
   .more-info {
