@@ -5,7 +5,7 @@ Two widgets groups which illustrate the trigger states in Zabbix.
 
 The first group of widgets show the numbers of triggers grouped by priority, the other widgets show the hosts which relate to these numbers.
 
-My widgets were inspired by the original Dashing<>Zabbix widget ( https://gist.github.com/chojayr/7401426 ), but remove some oddities. Mainly the CSS animation was quite annoying and the code itself contained lot's of redundancy. 
+My widgets were inspired by the original Zabbix widget ( https://gist.github.com/chojayr/7401426 ), but remove some oddities. The redundancy in the code itself was remove and the CSS animations were replaced by solid colors. Also widget and Dashing SCSS isn't mixed anymore. 
 
 screenshot
 ----------
