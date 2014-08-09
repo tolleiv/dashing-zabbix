@@ -1,0 +1,83 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+//$background-color:  #12b0c5;
+//$background-color:  rgba(0,0,0, 0.3);
+$value-color:       #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$label-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+$average-color: #FF7F0F;
+$warning-color: #FFB010;
+$high-color: #FF4E0D;
+$disaster-color: #E8290C;
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+
+.widget.widget-zabbix-trigger-groups {
+
+  padding: 0;
+  text-align: left;
+  color: $label-color;
+  font-size:14px;
+  font-weight: normal;
+  display: block;
+
+  dl {
+    width: 136px;
+    height: 136px;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    float: left;
+  }
+
+  .value {
+    font-weight: bold;
+  }
+
+  .prio-warning {
+    background-color: $warning-color;
+  }
+  .prio-average {
+    background-color: $average-color;
+  }
+  .prio-high {
+    background-color: $high-color;
+  }
+  .prio-disaster {
+    background-color: $disaster-color;
+  }
+
+  .list-nostyle {
+    list-style: none;
+  }
+
+  .description {
+    color: $label-color;
+    margin: 0;
+  }
+
+  .value {
+    display:block;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 12px;
+    font-weight: bold;
+    color: $value-color;
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+}

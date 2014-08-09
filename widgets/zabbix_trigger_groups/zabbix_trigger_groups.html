@@ -1,0 +1,12 @@
+<dl data-foreach-item="items"
+    data-bind-class="item.priority | prepend 'prio-'"
+    data-bind-alt="item.hosts | prepend 'Hosts: '"
+    data-bind-title="item.hosts | prepend 'Hosts: '"
+        >
+    <a data-bind-href="item.deeplink">
+    <dh class="value" data-bind="item.value | shortenedNumber | prepend prefix | append suffix"></dh>
+    <dd class="description" data-bind="item.description"></dd>
+    </a>
+</dl>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

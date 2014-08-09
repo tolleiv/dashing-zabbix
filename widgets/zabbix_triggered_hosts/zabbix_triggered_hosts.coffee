@@ -1,4 +1,4 @@
-class Dashing.ZabbixDetails extends Dashing.Widget
+class Dashing.ZabbixTriggeredHosts extends Dashing.Widget
 
   onData: (data) ->
     $(@node).find('.empty').remove()

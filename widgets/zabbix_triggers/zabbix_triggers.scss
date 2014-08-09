@@ -6,14 +6,19 @@
 $value-color:       #fff;
 
 $title-color:       rgba(255, 255, 255, 0.7);
-$label-color:       rgba(255, 255, 255, 0.7);
+$label-color:       rgba(255, 255, 255, 1);
 $moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+$average-color: #FF7F0F;
+$warning-color: #FFB010;
+$high-color: #FF4E0D;
+$disaster-color: #E8290C;
 
 // ----------------------------------------------------------------------------
 // Widget-list styles
 // ----------------------------------------------------------------------------
 
-.widget.widget-zabbix-details {
+.widget.widget-zabbix-triggers {
 
   vertical-align: top;
 
@@ -30,11 +35,34 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
     text-align: left;
     color: $label-color;
     font-size:12px;
+    font-weight: bold;
   }
 
   li {
+    padding: 2px;
     margin-bottom: 5px;
   }
+
+  li.prio-warning {
+    background-color: $warning-color;
+  }
+  li.prio-average {
+    background-color: $average-color;
+  }
+  li.prio-high {
+    background-color: $high-color;
+  }
+  li.prio-disaster {
+    background-color: $disaster-color;
+  }
+
+  li span { margin: 5px; display: inline-block }
+  li span.host { width: 400px; float: left; }
+  li span.description { width: 400px }
+  li span.lastchanged { width: 100px }
+
+
+
 
   .list-nostyle {
     list-style: none;
