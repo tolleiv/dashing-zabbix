@@ -33,7 +33,7 @@ SCHEDULER.every '10s' do
       'selectItems' => 1,
       'withUnacknowledgedEvents' => 1,
       'skipDependent' => 1,
-      'expandData' => 'host'
+			'selectHosts' => 'extend'
     )
   end
 
@@ -44,8 +44,8 @@ SCHEDULER.every '10s' do
 
     list.push(res)
 
-    states[res['priority'].to_i].push(res['hostname'])
-    states[99].push(res['hostname'])
+    states[res['priority'].to_i].push(res['hosts'][0]['name'])
+    states[99].push(res['hosts'][0]['name'])
     # , Time.at(res["lastchange"].to_i), Time.now - 24.hours
   end
 
