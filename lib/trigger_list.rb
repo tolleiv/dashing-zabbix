@@ -23,7 +23,7 @@ class TriggerList
 
   def push_to_list(obj)
     h = {
-      host: obj['host'],
+      host: obj['hosts'][0]['name'],
       priority_code: obj['priority'].to_i,
       priority: @prios[obj['priority'].to_i],
       description: obj['description'],
@@ -41,7 +41,7 @@ class TriggerList
       priority_code: obj['priority'].to_i,
       priority: @prios[obj['priority'].to_i]
     }
-    @group_hosts[key].push(obj['host'])
+    @group_hosts[key].push(obj['hosts'][0]['name'])
   end
 
   def sorted_list
